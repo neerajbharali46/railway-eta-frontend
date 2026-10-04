@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway ETA Prediction</title>
+    <link rel="stylesheet" href="index2.css">
+</head>
+<body>
+    <header>
+        <h1>Rail ETA Predictor</h1>
+        <p>Real-Time ML-Powered Arrival Prediction</p>
+    </header>
+
+    <main>
+
+        <!-- Train Selection -->
+        <section>
+            <h2>Select Train</h2>
+
+            <label for="train">Train Number:</label>
+            <input type="text" id="train" placeholder="e.g. 00851">
+
+            <label for="station">Current Station:</label>
+            <input type="text" id="station" placeholder="e.g. VIJAYAWADA JN">
+
+            <button id="predictBtn">Predict ETA</button>
+        </section>
+
+
+        <!-- Prediction Result -->
+        <section>
+            <h2>ETA</h2>
+
+            <h1 id="predictedEta">--:--</h1>
+
+            <p>
+                Predicted Future Delay:
+                <strong id="futureDelay">--</strong> minutes
+            </p>
+        </section>
+
+
+        <!-- Train Information -->
+        <section>
+            <h2>Train Conditions</h2>
+
+            <p>Current Speed: <span id="speed">--</span> km/h</p>
+
+            <p>Current Delay: <span id="delay">--</span> min</p>
+
+            <p>Distance to Next Station:
+                <span id="distance">--</span> km
+            </p>
+
+            <p>Historical Average Delay:
+                <span id="historicalDelay">--</span> min
+            </p>
+
+            <p>Congestion: <span id="congestion">--</span></p>
+
+            <p>Weather: <span id="weather">--</span></p>
+
+        </section>
+
+    </main>
+
+    <script src="index2.js"></script>
+</body>
+</html>
